@@ -13,15 +13,17 @@ const getFileFromGithub = (path) => {
 
 const getTags = (problemId) => {
     return new Promise((resolve, reject) => {
-        const tagsData = getFileFromGithub("https://github.com/dada878/CSES-Helper/blob/master/database/tags.json");
-        resolve(tagsData[problemId]);
+        getFileFromGithub("https://github.com/dada878/CSES-Helper/blob/master/database/tags.json").then((tagsData) => {
+            resolve(tagsData[problemId]);
+        });
     });
 };
 
 const getTips = (problemId) => {
     return new Promise((resolve, reject) => {
-        const tipsData = getFileFromGithub("https://github.com/dada878/CSES-Helper/blob/master/database/tips.json");
-        resolve(tipsData[problemId]);
+        const tipsData = getFileFromGithub("https://github.com/dada878/CSES-Helper/blob/master/database/tips.json").then((tipsData) => {
+            resolve(tipsData[problemId]);
+        });
     });
 };
 

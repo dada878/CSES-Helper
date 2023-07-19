@@ -26,10 +26,13 @@ const getTips = async (problemId) => {
     });
 }
 
-
 const createTagsSectionOnSidebar = async () => {
+    const container = document.createElement("div");
+    container.id = "tags-container";
+    sidebarElement.insertBefore(container, sidebarElement.firstChild);
     const dividerLine = document.createElement("hr");
     const sectionTitle = document.createElement("h4");
+    sectionTitle.style.margin = "0.8em 0 0.5em 0";
     sectionTitle.innerHTML = "Tags";
     const showTags = document.createElement("details");
     const showTagsSummary = document.createElement("summary");
@@ -39,9 +42,10 @@ const createTagsSectionOnSidebar = async () => {
     showTags.appendChild(tagsListElement);
     showTagsSummary.innerHTML = "Show Problem Tags";
     showTags.appendChild(showTagsSummary);
-    sidebarElement.insertBefore(dividerLine, sidebarElement.firstChild);
-    sidebarElement.insertBefore(showTags, sidebarElement.firstChild);
-    sidebarElement.insertBefore(sectionTitle, sidebarElement.firstChild);
+    container.insertBefore(dividerLine, container.firstChild);
+    container.insertBefore(showTags, container.firstChild);
+    container.insertBefore(sectionTitle, container.firstChild);
+    
     const tagsList = await getTags(problemId);
     tagsList.forEach((tag) => {
         const tagElement = document.createElement("li");
@@ -51,25 +55,30 @@ const createTagsSectionOnSidebar = async () => {
 }
 
 const createTipsSectionOnSidebar = async () => {
-    const dividerLine = document.createElement("hr");
+    const container = document.createElement("div");
+    container.id = "tips-container";
     const sectionTitle = document.createElement("h4");
+    const dividerLine = document.createElement("hr");
     sectionTitle.innerHTML = "Tips";
+    sectionTitle.style.margin = "0.2em 0 0.5em 0";
+    container.insertBefore(dividerLine, container.firstChild);
+    container.insertBefore(sectionTitle, container.firstChild);
+    sidebarElement.insertBefore(container, sidebarElement.firstChild);
 
-    sidebarElement.insertBefore(dividerLine, sidebarElement.firstChild);
-    
+    const containerRef = document.getElementById("tips-container");
+
     const tips = await getTips(problemId);
-    tips.forEach((tip, index) => {
+    tips.reverse().forEach((tip, index) => {
         const showTips = document.createElement("details");
         const showTipsSummary = document.createElement("summary");
-        showTipsSummary.innerHTML = "Show Tip " + (index + 1);
+        showTipsSummary.innerHTML = "Show Tip " + (tips.length - index);
         showTips.appendChild(showTipsSummary);
         const tipElement = document.createElement("p");
+        tipElement.style.margin = "5px";
         tipElement.innerHTML = tip;
         showTips.appendChild(tipElement);
-        sidebarElement.insertBefore(showTips, sidebarElement.firstChild);
+        containerRef.insertBefore(showTips, containerRef.children[1]);
     });
-    
-    sidebarElement.insertBefore(sectionTitle, sidebarElement.firstChild);
 }
 
 const createSolutionSectionOnNavbar = () => {
@@ -190,7 +199,7 @@ if (isSubmitPage()) {
 }
 
 if (isProblemPage()) {
+    createTipsSectionOnSidebar();
     createTagsSectionOnSidebar();
     createSolutionSectionOnNavbar();
-    createTipsSectionOnSidebar();
 }
