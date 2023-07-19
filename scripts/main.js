@@ -1,7 +1,6 @@
 if (typeof browser === "undefined") var browser = chrome;
 
-const splittedUrl = window.location.href.split("/");
-const problemId = splittedUrl.at(-1) == "" ? splittedUrl.at(-2) : splittedUrl.at(-1);
+const problemId = document.querySelector(".nav").children[0].firstChild.href.split("/").at(-2);
 const navbarElement = document.querySelector(".nav");
 const sidebarElement = document.querySelector(".nav.sidebar");
 
@@ -15,6 +14,18 @@ const getTags = async (problemId) => {
         });
     });
 }
+
+const getTips = async (problemId) => {
+    return new Promise((resolve, reject) => {
+        browser.runtime.sendMessage({
+            command: "fetch-tips",
+            problemId: problemId
+        }).then((response) => {
+            resolve(response.tips);
+        });
+    });
+}
+
 
 const createTagsSectionOnSidebar = async () => {
     const dividerLine = document.createElement("hr");
@@ -37,6 +48,28 @@ const createTagsSectionOnSidebar = async () => {
         tagElement.innerHTML = tag;
         document.getElementById("tags").appendChild(tagElement);
     });
+}
+
+const createTipsSectionOnSidebar = async () => {
+    const dividerLine = document.createElement("hr");
+    const sectionTitle = document.createElement("h4");
+    sectionTitle.innerHTML = "Tips";
+
+    sidebarElement.insertBefore(dividerLine, sidebarElement.firstChild);
+    
+    const tips = await getTips(problemId);
+    tips.forEach((tip, index) => {
+        const showTips = document.createElement("details");
+        const showTipsSummary = document.createElement("summary");
+        showTipsSummary.innerHTML = "Show Tip " + (index + 1);
+        showTips.appendChild(showTipsSummary);
+        const tipElement = document.createElement("p");
+        tipElement.innerHTML = tip;
+        showTips.appendChild(tipElement);
+        sidebarElement.insertBefore(showTips, sidebarElement.firstChild);
+    });
+    
+    sidebarElement.insertBefore(sectionTitle, sidebarElement.firstChild);
 }
 
 const createSolutionSectionOnNavbar = () => {
@@ -159,4 +192,5 @@ if (isSubmitPage()) {
 if (isProblemPage()) {
     createTagsSectionOnSidebar();
     createSolutionSectionOnNavbar();
+    createTipsSectionOnSidebar();
 }

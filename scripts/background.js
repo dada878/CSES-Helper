@@ -1,14 +1,27 @@
 if (typeof browser === "undefined") var browser = chrome;
 
-const getTags = (problemId) => {
+const getFileFromGithub = (path) => {
     return new Promise((resolve, reject) => {
-        fetch("https://github.com/dada878/CSES-Helper/blob/master/database/tags.json")
+        fetch(path)
             .then(response => response.json())
             .then(data => {
                 const content = data.payload.blob.rawLines.join("\n");
-                tagsData = JSON.parse(content);
-                resolve(tagsData[problemId]);
-        });
+                resolve(JSON.parse(content));
+            });
+    });
+};
+
+const getTags = (problemId) => {
+    return new Promise((resolve, reject) => {
+        const tagsData = getFileFromGithub("https://github.com/dada878/CSES-Helper/blob/master/database/tags.json");
+        resolve(tagsData[problemId]);
+    });
+};
+
+const getTips = (problemId) => {
+    return new Promise((resolve, reject) => {
+        const tipsData = getFileFromGithub("https://github.com/dada878/CSES-Helper/blob/master/database/tips.json");
+        resolve(tipsData[problemId]);
     });
 };
 
@@ -17,6 +30,12 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         getTags(request.problemId).then((tags) => {
             sendResponse({
                 tags: tags ?? []
+            });
+        });
+    } else if (request.command === "fetch-tips") {
+        getTips(request.problemId).then((tips) => {
+            sendResponse({
+                tips: tips ?? []
             });
         });
     }
