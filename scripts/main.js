@@ -3,6 +3,8 @@ if (typeof browser === "undefined") var browser = chrome;
 const problemId = document.querySelector(".nav").children[0].firstChild.href.split("/").at(-2);
 const navbarElement = document.querySelector(".nav");
 const sidebarElement = document.querySelector(".nav.sidebar");
+const topics = [];
+const problemset = {};
 
 const getTags = async (problemId) => {
     return new Promise((resolve, reject) => {
@@ -191,6 +193,97 @@ const isProblemPage = () => {
     return result;
 }
 
+const isProblemListPage = () => location.href.startsWith("https://cses.fi/problemset/list/");
+
+const createElementByHTMLtext = (htmlText) => {
+    const template = document.createElement('template');
+    template.innerHTML = htmlText.trim();
+    return template.content.firstChild;
+}
+
+const generateProblemset = () => {
+    const taskGroups = [...document.querySelectorAll(".task-list")];
+    taskGroups.shift();
+    for (let i = 0; i < taskGroups.length; i++) {
+        problemset[topics[i]] = [];
+        const problems = [...taskGroups[i].children];
+        problems.forEach((problem, index) => {
+            const solvers = problem.querySelector(".detail").innerText.split("/").at(0).trim();
+            const defaultIndex = index;
+            const html = problem.outerHTML;
+            problemset[topics[i]].push({
+                defaultIndex,
+                solvers,
+                html
+            });
+        });
+    }
+};
+
+const sortByDefault = (topicIndex) => {
+    const taskGroups = [...document.querySelectorAll(".task-list")];
+    taskGroups.shift();
+    taskGroups[topicIndex].innerHTML = "";
+    problemset[topics[topicIndex]].sort((a, b) => {
+        return a.defaultIndex - b.defaultIndex;
+    }).forEach((problem) => {
+        taskGroups[topicIndex].innerHTML += problem.html;
+    });
+}
+
+const sortBySolvers = (topicIndex) => {
+    const taskGroups = [...document.querySelectorAll(".task-list")];
+    taskGroups.shift();
+    taskGroups[topicIndex].innerHTML = "";
+    problemset[topics[topicIndex]].sort((a, b) => {
+        return b.solvers - a.solvers;
+    }).forEach((problem) => {
+        taskGroups[topicIndex].innerHTML += problem.html;
+    });
+}
+
+const createCustomSortSelector = () => {
+    const titleList = [...document.querySelectorAll("h2")];
+    titleList.shift();
+    titleList.forEach((element, index) => {
+        const selector = createElementByHTMLtext(`
+        <select style="margin-left:0.5rem">
+            <option>Sort By Default</option>
+            <option>Sort By Number of Solvers</option>
+        </select>
+        `);
+        const sortProblems = () => {
+            if (selector.value == "Sort By Default") {
+                sortByDefault(index);
+            } else if (selector.value == "Sort By Number of Solvers") {
+                sortBySolvers(index);
+            }
+            const sortRule = JSON.parse(localStorage.getItem("sort-rule")) ?? {};
+            sortRule[index] = selector.value;
+            localStorage.setItem("sort-rule", JSON.stringify(sortRule)); 
+        }
+        selector.addEventListener("change", () => sortProblems());
+        element.appendChild(selector);
+        topics.push(element.innerHTML.split("<")[0]);
+    });
+}
+
+const applySortRule = () => {
+    const titleList = [...document.querySelectorAll("h2")];
+    const sortRule = JSON.parse(localStorage.getItem("sort-rule")) ?? {};
+    titleList.shift();
+    titleList.forEach((element, index) => {
+        const selector = element.querySelector("select");
+        console.log(index)
+        console.log(sortRule)
+        if (index in sortRule) {
+            selector.value = sortRule[index];
+            const event = new Event('change');
+            selector.dispatchEvent(event);
+        }
+    });
+}
+
 if (isSubmitPage()) {
     loadLanguageSelectorCache();
     createLanguageSelectorCache();
@@ -202,4 +295,10 @@ if (isProblemPage()) {
     createTipsSectionOnSidebar();
     createTagsSectionOnSidebar();
     createSolutionSectionOnNavbar();
+}
+
+if (isProblemListPage()) {
+    createCustomSortSelector();
+    generateProblemset();
+    applySortRule();
 }
