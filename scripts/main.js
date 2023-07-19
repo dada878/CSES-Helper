@@ -37,6 +37,7 @@ const createTagsSectionOnSidebar = async () => {
     sectionTitle.style.margin = "0.8em 0 0.5em 0";
     sectionTitle.innerHTML = "Tags";
     const showTags = document.createElement("details");
+    showTags.id = "show-tags";
     const showTagsSummary = document.createElement("summary");
     const tagsListElement = document.createElement("ul");
     tagsListElement.id = "tags"
@@ -49,6 +50,15 @@ const createTagsSectionOnSidebar = async () => {
     container.insertBefore(sectionTitle, container.firstChild);
     
     const tagsList = await getTags(problemId);
+
+    if (tagsList.length == 0) {
+        const noTagsElement = document.createElement("p");
+        noTagsElement.style.margin = "0px";
+        noTagsElement.innerHTML = "No Tags";
+        document.getElementById("show-tags").outerHTML = noTagsElement.outerHTML;
+        return;
+    }
+
     tagsList.forEach((tag) => {
         const tagElement = document.createElement("li");
         tagElement.innerHTML = tag;
@@ -70,6 +80,15 @@ const createTipsSectionOnSidebar = async () => {
     const containerRef = document.getElementById("tips-container");
 
     const tips = await getTips(problemId);
+
+    if (tips.length == 0) {
+        const noTipsElement = document.createElement("p");
+        noTipsElement.style.margin = "0px";
+        noTipsElement.innerHTML = "No Tips";
+        containerRef.insertBefore(noTipsElement, containerRef.firstChild.nextSibling);
+        return;
+    }
+
     tips.reverse().forEach((tip, index) => {
         const showTips = document.createElement("details");
         const showTipsSummary = document.createElement("summary");
