@@ -126,11 +126,9 @@ const createLanguageSelectorCache = () => {
     const languageOption = document.getElementById("option");
     languageSelector.addEventListener("onselect", () => {
         localStorage.setItem("language", languageSelector.value);
-        console.log("language changed to " + languageSelector.value);
     });
     languageOption.addEventListener("onselect", () => {
         localStorage.setItem("language_option", languageOption.value);
-        console.log("language changed to " + languageOption.value);
     });
 }
 
@@ -283,8 +281,6 @@ const applySortRule = () => {
     titleList.shift();
     titleList.forEach((element, index) => {
         const selector = element.querySelector("select");
-        console.log(index)
-        console.log(sortRule)
         if (index in sortRule) {
             selector.value = sortRule[index];
             const event = new Event('change');
