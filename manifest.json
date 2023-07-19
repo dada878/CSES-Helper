@@ -3,7 +3,7 @@
   "name": "CSES Helper",
   "description": "Tools for CSES Online Judge",
   "homepage_url": "https://github.com/dada878",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Dada878",
   "action": {
     "default_icon": "assets/favicon.png",

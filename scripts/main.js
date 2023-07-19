@@ -125,8 +125,7 @@ const createLanguageSelectorCache = () => {
     });
 }
 
-const submitCode = (code) => {
-    const fileData = new Blob([code], { type: 'text/plain' });
+const submitCodeFile = (fileData) => {
     const formData = new FormData();
     const languageSelector = document.getElementById("lang");
     const languageOption = document.getElementById("option");
@@ -167,10 +166,11 @@ const modifySubmitButton = () => {
     submitButton.addEventListener("click", (event) => {
         const code = document.getElementById("code").value;
         if (code == "") {
-            alert("code is empty");
+            const fileInput = document.querySelector("input[type='file']");
+            submitCodeFile(fileInput.files[0]);
             return;
         }
-        submitCode(code);
+        submitCodeFile(new Blob([code], { type: 'text/plain' }))
         event.preventDefault();
     });
 }
