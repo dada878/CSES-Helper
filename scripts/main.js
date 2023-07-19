@@ -141,6 +141,7 @@ const isProblemPage = () => {
         "https://cses.fi/problemset/view/",
         "https://cses.fi/problemset/stats/",
         "https://cses.fi/problemset/hack/",
+        "https://cses.fi/problemset/result/",
     ];
     possibleUrls.forEach((url) => {
         if (location.href.startsWith(url)) result = true;
