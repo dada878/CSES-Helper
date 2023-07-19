@@ -34,7 +34,7 @@ const createTagsSectionOnSidebar = async () => {
     sidebarElement.insertBefore(container, sidebarElement.firstChild);
     const dividerLine = document.createElement("hr");
     const sectionTitle = document.createElement("h4");
-    sectionTitle.style.margin = "0.8em 0 0.5em 0";
+    sectionTitle.style.margin = "0.1em 0 0.5em 0";
     sectionTitle.innerHTML = "Tags";
     const showTags = document.createElement("details");
     showTags.id = "show-tags";
@@ -48,7 +48,7 @@ const createTagsSectionOnSidebar = async () => {
     container.insertBefore(dividerLine, container.firstChild);
     container.insertBefore(showTags, container.firstChild);
     container.insertBefore(sectionTitle, container.firstChild);
-    
+
     const tagsList = await getTags(problemId);
 
     if (tagsList.length == 0) {
@@ -72,7 +72,7 @@ const createTipsSectionOnSidebar = async () => {
     const sectionTitle = document.createElement("h4");
     const dividerLine = document.createElement("hr");
     sectionTitle.innerHTML = "Tips";
-    sectionTitle.style.margin = "0.2em 0 0.5em 0";
+    sectionTitle.style.margin = "0.6em 0 0.5em 0";
     container.insertBefore(dividerLine, container.firstChild);
     container.insertBefore(sectionTitle, container.firstChild);
     sidebarElement.insertBefore(container, sidebarElement.firstChild);
@@ -144,7 +144,7 @@ const createLanguageSelectorCache = () => {
     });
 }
 
-const submitCodeFile = (fileData) => {
+const submitCodeFile = async (fileData) => {
     const formData = new FormData();
     const languageSelector = document.getElementById("lang");
     const languageOption = document.getElementById("option");
@@ -156,20 +156,17 @@ const submitCodeFile = (fileData) => {
     formData.append('target', 'problemset');
     formData.append('type', 'course');
     formData.append('file', fileData, 'code.cpp');
-    console.log(formData);
-    const xhr = new XMLHttpRequest();
-    xhr.open('POST', '/course/send.php', true);
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-                location.href = xhr.responseURL;
-            } else {
-                alert("submit failed");
-            }
+    fetch('/course/send.php', {
+        method: 'POST',
+        body: formData
+    }).then((response) => {
+        if (response.ok) {
+            location.href = response.url;
         }
-    };
-    xhr.send(formData);
-}
+    }).catch((error) => {
+        console.error('Error:', error);
+    });
+};
 
 const createCodeInputArea = () => {
     const codeInputArea = document.createElement("textarea");
@@ -282,7 +279,7 @@ const createCustomSortSelector = () => {
             }
             const sortRule = JSON.parse(localStorage.getItem("sort-rule")) ?? {};
             sortRule[index] = selector.value;
-            localStorage.setItem("sort-rule", JSON.stringify(sortRule)); 
+            localStorage.setItem("sort-rule", JSON.stringify(sortRule));
         }
         selector.addEventListener("change", () => sortProblems());
         element.appendChild(selector);
