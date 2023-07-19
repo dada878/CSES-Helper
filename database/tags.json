@@ -1,67 +1,69 @@
 {
     "1068": [
-        "流程控制"
+        "Implementation"
     ],
     "1083": [
-        "流程控制",
-        "數學"
+        "Implementation",
+        "Math"
     ],
     "1069": [
-        "流程控制"
+        "Implementation"
     ],
     "1094": [
-        "流程控制"
+        "Implementation"
     ],
     "1070": [
-        "數學"
+        "Math"
     ],
     "1071": [
-        "數學"
+        "Math"
     ],
     "1072": [
-        "數學"
+        "Math"
     ],
     "1092": [
-        "數學"
+        "Math"
     ],
     "1617": [
-        "數學"
+        "Math"
     ],
     "1618": [
-        "數學"
+        "Math"
     ],
     "1754": [
-        "流程控制",
-        "二分搜"
+        "Implementation",
+        "Binary Search"
     ],
     "1755": [
-        "字串"
+        "String"
     ],
     "2205": [
-        "遞迴",
-        "位元運算"
+        "Recursive",
+        "Bit Manipulation"
     ],
     "2165": [
-        "遞迴"
+        "Recursive"
     ],
     "1622": [
-        "遞迴",
-        "枚舉"
+        "Recursive",
+        "Enumeration"
     ],
     "1623": [
-        "遞迴枚舉",
-        "位元枚舉"
+        "Recursive Enumeration",
+        "Bit Enumeration"
     ],
     "1624": [
-        "遞迴枚舉",
-        "剪枝"
+        "Recursive Enumeration",
+        "Backtracking",
+        "Pruning"
     ],
     "2431": [
-        "數學"
+        "Math"
     ],
     "1625": [
-        "枚舉",
-        "剪枝",
-        "動態規劃"
+        "Recursive Enumeration",
+        "Pruning",
+        "Backtracking",
+        "Dynamic Programming"
     ]
 }

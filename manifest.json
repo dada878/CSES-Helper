@@ -17,13 +17,13 @@
   "permissions": [],
   "host_permissions": [
     "https://cses.fi/*",
-    "https://github.com/*"
+    "https://github.com/dada878/CSES-Helper/*"
   ],
   "content_scripts": [
     {
       "matches": [
         "https://cses.fi/*",
-        "https://github.com/*"
+        "https://github.com/dada878/CSES-Helper/*"
       ],
       "js": [
         "./scripts/main.js"
