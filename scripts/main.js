@@ -193,7 +193,10 @@ const isProblemPage = () => {
     return result;
 }
 
-const isProblemListPage = () => location.href.startsWith("https://cses.fi/problemset/list/");
+const isProblemListPage = () => [
+    "https://cses.fi/problemset/list/",
+    "https://cses.fi/problemset/"
+].includes(location.href);
 
 const createElementByHTMLtext = (htmlText) => {
     const template = document.createElement('template');
