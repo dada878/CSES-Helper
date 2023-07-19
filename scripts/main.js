@@ -6,27 +6,17 @@ const sidebarElement = document.querySelector(".nav.sidebar");
 const topics = [];
 const problemset = {};
 
-const getTags = async (problemId) => {
-    return new Promise((resolve, reject) => {
-        browser.runtime.sendMessage({
-            command: "fetch-tags",
-            problemId: problemId
-        }).then((response) => {
-            resolve(response.tags);
-        });
-    });
-}
+const getTags = (problemId) =>
+    browser.runtime.sendMessage({
+        command: "fetch-tags",
+        problemId: problemId
+    }).then(response => response.tags);
 
-const getTips = async (problemId) => {
-    return new Promise((resolve, reject) => {
-        browser.runtime.sendMessage({
-            command: "fetch-tips",
-            problemId: problemId
-        }).then((response) => {
-            resolve(response.tips);
-        });
-    });
-}
+const getTips = (problemId) =>
+    browser.runtime.sendMessage({
+        command: "fetch-tips",
+        problemId: problemId
+    }).then(response => response.tips);
 
 const createTagsSectionOnSidebar = async () => {
     const container = document.createElement("div");
@@ -144,7 +134,7 @@ const createLanguageSelectorCache = () => {
     });
 }
 
-const submitCodeFile = async (fileData) => {
+const submitCodeFile = (fileData) => {
     const formData = new FormData();
     const languageSelector = document.getElementById("lang");
     const languageOption = document.getElementById("option");
