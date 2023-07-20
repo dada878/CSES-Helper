@@ -40,6 +40,7 @@ const createTagsSectionOnSidebar = async () => {
     container.insertBefore(sectionTitle, container.firstChild);
 
     const tagsList = await getTags(problemId);
+    console.log(tagsList);
 
     if (tagsList.length == 0) {
         const noTagsElement = document.createElement("p");
@@ -199,7 +200,9 @@ const isProblemPage = () => {
 
 const isProblemListPage = () => [
     "https://cses.fi/problemset/list/",
-    "https://cses.fi/problemset/"
+    "https://cses.fi/problemset/list",
+    "https://cses.fi/problemset/",
+    "https://cses.fi/problemset"
 ].includes(location.href);
 
 const createElementByHTMLtext = (htmlText) => {
