@@ -115,20 +115,17 @@ const loadLanguageSelectorCache = () => {
     const language = localStorage.getItem("language");
     const option = localStorage.getItem("language_option");
     if (language) languageSelector.value = language;
-    setTimeout(() => {
-        const event = new Event('change');
-        languageSelector.dispatchEvent(event);
-        if (option) languageOption.value = option;
-    }, 500);
+    checkSelects();
+    languageOption.value = option;
 }
 
 const createLanguageSelectorCache = () => {
     const languageSelector = document.getElementById("lang");
     const languageOption = document.getElementById("option");
-    languageSelector.addEventListener("onselect", () => {
+    languageSelector.addEventListener("change", () => {
         localStorage.setItem("language", languageSelector.value);
     });
-    languageOption.addEventListener("onselect", () => {
+    languageOption.addEventListener("change", () => {
         localStorage.setItem("language_option", languageOption.value);
     });
 }
