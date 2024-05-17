@@ -1,5 +1,8 @@
 if (typeof browser === "undefined") var browser = chrome;
 
+const chromeStorage = chrome.storage.local;
+
+
 const problemId = document.querySelector(".nav").children[0].firstChild.href.split("/").at(-2);
 const navbarElement = document.querySelector(".nav");
 const sidebarElement = document.querySelector(".nav.sidebar");
@@ -112,21 +115,27 @@ const createSolutionSectionOnNavbar = () => {
 const loadLanguageSelectorCache = () => {
     const languageSelector = document.getElementById("lang");
     const languageOption = document.getElementById("option");
-    const language = localStorage.getItem("language");
-    const option = localStorage.getItem("language_option");
-    if (language) languageSelector.value = language;
-    checkSelects();
-    languageOption.value = option;
+
+    chromeStorage.get(["language", "option"]).then((result) => {
+        setTimeout(() => {
+            if (result.language) languageSelector.value = result.language;
+            languageSelector.dispatchEvent(new Event('change'));
+            setTimeout(() => {
+                if (result.option) languageOption.value = result.option;
+                languageSelector.dispatchEvent(new Event('change'));
+            }, 300);
+        }, 300);
+    });
 }
 
 const createLanguageSelectorCache = () => {
     const languageSelector = document.getElementById("lang");
     const languageOption = document.getElementById("option");
     languageSelector.addEventListener("change", () => {
-        localStorage.setItem("language", languageSelector.value);
+        chromeStorage.set({ language: languageSelector.value });
     });
     languageOption.addEventListener("change", () => {
-        localStorage.setItem("language_option", languageOption.value);
+        chromeStorage.set({ option: languageOption.value });
     });
 }
 
@@ -265,9 +274,11 @@ const createCustomSortSelector = () => {
             } else if (selector.value == "Sort By Number of Solvers") {
                 sortBySolvers(index);
             }
-            const sortRule = JSON.parse(localStorage.getItem("sort-rule")) ?? {};
-            sortRule[index] = selector.value;
-            localStorage.setItem("sort-rule", JSON.stringify(sortRule));
+            chromeStorage.get("sort-rule", (result) => {
+                const sortRule = result["sort-rule"] ?? {};
+                sortRule[index] = selector.value;
+                chromeStorage.set({ "sort-rule": sortRule });
+            });
         }
         selector.addEventListener("change", () => sortProblems());
         element.appendChild(selector);
@@ -277,15 +288,17 @@ const createCustomSortSelector = () => {
 
 const applySortRule = () => {
     const titleList = [...document.querySelectorAll("h2")];
-    const sortRule = JSON.parse(localStorage.getItem("sort-rule")) ?? {};
-    titleList.shift();
-    titleList.forEach((element, index) => {
-        const selector = element.querySelector("select");
-        if (index in sortRule) {
-            selector.value = sortRule[index];
-            const event = new Event('change');
-            selector.dispatchEvent(event);
-        }
+    chromeStorage.get("sort-rule", (result) => {
+        const sortRule = result["sort-rule"] ?? {};
+        titleList.shift();
+        titleList.forEach((element, index) => {
+            const selector = element.querySelector("select");
+            if (index in sortRule) {
+                selector.value = sortRule[index];
+                const event = new Event('change');
+                selector.dispatchEvent(event);
+            }
+        });
     });
 }
 

@@ -15,7 +15,9 @@
     "48": "assets/icon48.png",
     "128": "assets/icon128.png"
   },
-  "permissions": [],
+  "permissions": [
+    "storage"
+  ],
   "host_permissions": [
     "https://cses.fi/*",
     "https://github.com/dada878/CSES-Helper/*"
