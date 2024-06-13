@@ -47,5 +47,6 @@ A browser extension that improve user experience on CSES Online Judge.
 Coming Soon...
 ## Future
 - Show tags in problem list page
+- Add "Copy code" button in result page
 - Problem search
 - Problem filter
