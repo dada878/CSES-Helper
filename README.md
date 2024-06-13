@@ -46,5 +46,6 @@ A browser extension that improve user experience on CSES Online Judge.
 ### Solution
 Coming Soon...
 ## Future
-- Problem Search
-- Problem Filter
+- Show tags in problem list page
+- Problem search
+- Problem filter
