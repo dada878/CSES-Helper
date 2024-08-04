@@ -204,6 +204,8 @@ const isProblemPage = () => {
     return result;
 }
 
+const isResultPage = () => location.href.startsWith("https://cses.fi/problemset/result/");
+
 const isProblemListPage = () => [
     "https://cses.fi/problemset/list/",
     "https://cses.fi/problemset/list",
@@ -302,6 +304,28 @@ const applySortRule = () => {
     });
 }
 
+function addCopyToClipboardButton() {
+    const actionBar = document.querySelector(".content .nav");
+    const code = document.querySelector("pre").innerText;
+
+    const button = createElementByHTMLtext( /* html */ `
+        <li style="cursor: pointer;">
+            <a>copy to clipboard</a>
+        </li>
+    `)
+
+    button.addEventListener("click", () => {
+        navigator.clipboard.writeText(code);
+        const copyToClipboardButton = button.querySelector("a");
+        copyToClipboardButton.innerHTML = "copied :)";
+        setTimeout(() => {
+            copyToClipboardButton.innerHTML = "copy to clipboard";
+        }, 1000);
+    });
+
+    actionBar.appendChild(button);
+}
+
 if (isSubmitPage()) {
     loadLanguageSelectorCache();
     createLanguageSelectorCache();
@@ -319,4 +343,8 @@ if (isProblemListPage()) {
     createCustomSortSelector();
     generateProblemset();
     applySortRule();
+}
+
+if (isResultPage()) {
+    addCopyToClipboardButton();
 }
