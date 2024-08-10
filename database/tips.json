@@ -1,19 +1,19 @@
 {
     "1068": [],
     "1083": [
-        "如何算出 1 ~ n 的總和？"
+        "How to calculate the sum of 1 ~ n?"
     ],
     "1069": [],
     "1094": [
-        "什麼情況下 x[i] 需要倍增加？要增加多少？"
+        "When do we need to double x[i]? How much do we need to double?"
     ],
     "1070": [
-        "假設 k 為奇數，如何保證任意一對 x[k] 與 x[k+1] 的差都相同？"
+        "If k is odd, how to ensure that the difference between any pair of x[k] and x[k+1] is the same?"
     ],
     "1071": [
-        "從左上到右下那一排格子是不是有什麼規律？",
-        "你要如何透過這個規律來算出其他格子的數字？",
-        "座標的 x 或 y 分別是奇數或偶數時答案會有什麼改變？"
+        "Is there any rule for the first row of cells from the top left to the bottom right?",
+        "How do you calculate the numbers of other cells through this rule?",
+        "What changes will the answer have when the x or y of the coordinate is odd or even?"
     ],
     "1072": [
         
@@ -22,8 +22,8 @@
 
     ],
     "1617": [
-        "對於每個位元，可能的數字有幾個？",
-        "對於每個位元，實際上可以對答案貢獻多少？"
+        "How many possible numbers are there for each bit?",
+        "How much can each bit actually contribute to the answer?"
     ],
     "1618": [
 
@@ -44,8 +44,6 @@
 
     ],
     "1623": [
-        "仔細觀察 n 的大小",
-        "既然 n 這麼小，那有沒有更簡單粗暴的做法？"
     ],
     "1624": [
 

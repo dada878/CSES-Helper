@@ -1,695 +1,692 @@
 {
-    "題目名稱": [
-        "核心考點"
+    "Problem ID": [
+        "Tags"
     ],
     "1068": [
-        "流程控制"
+        "Control flow"
     ],
     "1083": [
-        "流程控制",
-        "數學"
+        "Control flow",
+        "Math"
     ],
     "1069": [
-        "流程控制"
+        "Control flow"
     ],
     "1094": [
-        "流程控制"
+        "Control flow"
     ],
     "1070": [
-        "數學"
+        "Math"
     ],
     "1071": [
-        "數學"
+        "Math"
     ],
     "1072": [
-        "數學"
+        "Math"
     ],
     "1092": [
-        "數學"
+        "Math"
     ],
     "1617": [
-        "數論",
-        "數學"
+        "Math"
     ],
     "1618": [
-        "數學"
+        "Math"
     ],
     "1754": [
-        "數學",
-        "搜尋",
-        "二分搜（Binary search）"
+        "Math",
+        "Searching",
+        "Binary search"
     ],
     "1755": [
-        "字元轉換",
-        "字串"
+        "String"
     ],
     "2205": [
-        "遞迴",
-        "枚舉",
-        "位元（Bitmask）"
+        "Recursion",
+        "Enumeration",
+        "Bitmask Enumeration"
     ],
     "2165": [
-        "遞迴",
-        "枚舉"
+        "Recursion",
+        "Enumeration"
     ],
     "1622": [
-        "遞迴",
-        "枚舉",
+        "Recursion",
+        "Enumeration",
         "next_permutation"
     ],
     "1623": [
-        "遞迴",
-        "枚舉",
-        "位元枚舉（Submask enumeration）"
+        "Recursion",
+        "Enumeration",
+        "Bitmask Enumeration"
     ],
     "1624": [
-        "遞迴",
-        "枚舉",
-        "剪枝"
+        "Recursion",
+        "Enumeration",
+        "Pruning"
     ],
     "2431": [
-        "數學"
+        "Math"
     ],
     "1625": [
-        "遞迴",
-        "枚舉",
-        "剪枝"
+        "Recursion",
+        "Enumeration",
+        "Pruning"
     ],
     "1621": [
-        "資料結構",
-        "流程控制",
-        "排序",
+        "Data Structure",
+        "Control flow",
+        "Sorting",
         "set/multiset"
     ],
     "1084": [
-        "雙指針（Two pointers）",
-        "貪心",
-        "二分搜（Binary search）"
+        "Two Pointers",
+        "Greedy",
+        "Binary search"
     ],
     "1090": [
-        "雙指針（Two pointers）",
-        "貪心"
+        "Two Pointers",
+        "Greedy"
     ],
     "1091": [
-        "資料結構",
-        "貪心",
+        "Data Structure",
+        "Greedy",
         "set/multiset"
     ],
     "1619": [
-        "資料結構",
-        "差分"
+        "Data Structure",
+        "Difference"
     ],
     "1629": [
-        "貪心",
-        "區間貪心"
+        "Greedy"
     ],
     "1640": [
-        "雙指針（Two pointers）",
-        "搜尋",
-        "二分搜（Binary search）"
+        "Two Pointers",
+        "Searching",
+        "Binary search"
     ],
     "1643": [
-        "資料結構",
-        "前綴和（Prefix sum）",
+        "Data Structure",
+        "Prefix Sum",
         "set/multiset",
-        "DP"
+        "Dynamic Programming (DP)"
     ],
     "1074": [
-        "離散化",
-        "資料結構",
+        "Discretization",
+        "Data Structure",
         "map"
     ],
     "2183": [
-        "貪心"
+        "Greedy"
     ],
     "2216": [
-        "貪心"
+        "Greedy"
     ],
     "2217": [
-        "貪心"
+        "Greedy"
     ],
     "1141": [
-        "資料結構",
-        "滑動窗口（Sliding window）",
+        "Data Structure",
+        "Sliding Window",
         "set/multiset"
     ],
     "1073": [
-        "資料結構",
+        "Data Structure",
         "set/multiset"
     ],
     "1163": [
-        "資料結構",
+        "Data Structure",
         "set/multiset"
     ],
     "2162": [
-        "資料結構",
+        "Data Structure",
         "Linked-list"
     ],
     "2163": [
-        "資料結構",
-        "樹狀數組（BIT）",
+        "Data Structure",
+        "Binary Index Tree (BIT)",
         "pb_ds",
         "Ordered-set"
     ],
     "2168": [
-        "資料結構",
-        "排序",
+        "Data Structure",
+        "Sorting",
         "set/multiset"
     ],
     "2169": [
-        "資料結構",
-        "樹狀數組（BIT）",
-        "排序"
+        "Data Structure",
+        "Binary Index Tree (BIT)",
+        "Sorting"
     ],
     "1164": [
-        "貪心",
-        "掃描線（Sweep line）"
+        "Greedy",
+        "Sweep Line"
     ],
     "1620": [
-        "搜尋",
-        "二分搜（Binary search）"
+        "Searching",
+        "Binary search"
     ],
     "1630": [
-        "貪心",
-        "排序"
+        "Greedy",
+        "Sorting"
     ],
     "1631": [
-        "貪心"
+        "Greedy"
     ],
     "1641": [
-        "雙指針（Two pointers）",
-        "枚舉",
-        "排序"
+        "Two Pointers",
+        "Enumeration",
+        "Sorting"
     ],
     "1642": [
-        "資料結構",
-        "搜尋",
+        "Data Structure",
+        "Searching",
         "map"
     ],
     "1645": [
-        "資料結構",
-        "單調隊列",
+        "Data Structure",
+        "Monotonic Stack",
         "stack"
     ],
     "1660": [
-        "滑動窗口（Sliding window）",
-        "搜尋"
+        "Sliding Window",
+        "Searching"
     ],
     "1661": [
-        "資料結構",
-        "搜尋",
-        "前綴和（Prefix sum）",
+        "Data Structure",
+        "Searching",
+        "Prefix Sum",
         "map"
     ],
     "1662": [
-        "資料結構",
-        "枚舉",
-        "前綴和（Prefix sum）",
+        "Data Structure",
+        "Enumeration",
+        "Prefix Sum",
         "map"
     ],
     "2428": [
-        "資料結構",
-        "滑動窗口（Sliding window）",
+        "Data Structure",
+        "Sliding Window",
         "map"
     ],
     "1085": [
-        "貪心",
-        "二分搜（Binary search）"
+        "Greedy",
+        "Binary search"
     ],
     "1076": [
-        "資料結構",
+        "Data Structure",
         "set/multiset",
         "pb_ds",
         "Ordered-set"
     ],
     "1077": [
-        "資料結構",
+        "Data Structure",
         "set/multiset",
         "Ordered-set"
     ],
     "1632": [
-        "資料結構",
-        "貪心",
-        "枚舉",
-        "排序",
+        "Data Structure",
+        "Greedy",
+        "Enumeration",
+        "Sorting",
         "set/multiset"
     ],
     "1644": [
-        "雙指針（Two pointers）",
-        "資料結構",
-        "貪心",
-        "滑動窗口（Sliding window）",
+        "Two Pointers",
+        "Data Structure",
+        "Greedy",
+        "Sliding Window",
         "set/multiset"
     ],
     "1633": [
-        "排列組合",
-        "DP"
+        "Combination",
+        "Dynamic Programming (DP)"
     ],
     "1634": [
-        "DP"
+        "Dynamic Programming (DP)"
     ],
     "1635": [
-        "排列組合",
-        "DP"
+        "Combination",
+        "Dynamic Programming (DP)"
     ],
     "1636": [
-        "排列組合",
-        "DP"
+        "Combination",
+        "Dynamic Programming (DP)"
     ],
     "1637": [
-        "DP"
+        "Dynamic Programming (DP)"
     ],
     "1638": [
-        "排列組合",
-        "DP"
+        "Combination",
+        "Dynamic Programming (DP)"
     ],
     "1158": [
-        "背包問題（Knapsack problem）",
-        "DP"
+        "Knapsack problem",
+        "Dynamic Programming (DP)"
     ],
     "1746": [
-        "DP"
+        "Dynamic Programming (DP)"
     ],
     "2413": [
-        "DP"
+        "Dynamic Programming (DP)"
     ],
     "1639": [
-        "DP"
+        "Dynamic Programming (DP)"
     ],
     "1744": [
-        "DP"
+        "Dynamic Programming (DP)"
     ],
     "1745": [
-        "背包問題（Knapsack problem）",
-        "位元DP（Bitmask DP）",
-        "DP"
+        "Knapsack problem",
+        "Bitmask DP",
+        "Dynamic Programming (DP)"
     ],
     "1097": [
-        "區間DP（Range DP）",
-        "DP"
+        "Range DP",
+        "Dynamic Programming (DP)"
     ],
     "1093": [
-        "背包問題（Knapsack problem）",
-        "排列組合",
-        "DP"
+        "Knapsack problem",
+        "Combination",
+        "Dynamic Programming (DP)"
     ],
     "1145": [
-        "最長遞增子序列（LIS）",
-        "二分搜（Binary search）",
-        "DP"
+        "Longest Increasing Subsequence (LIS)",
+        "Binary search",
+        "Dynamic Programming (DP)"
     ],
     "1140": [
-        "樹狀數組（BIT）",
+        "Binary Index Tree (BIT)",
         "set/multiset",
-        "DP"
+        "Dynamic Programming (DP)"
     ],
     "1653": [
-        "位元DP（Bitmask DP）",
-        "DP"
+        "Bitmask DP",
+        "Dynamic Programming (DP)"
     ],
     "2181": [
-        "輪廓線DP（Broken profile DP）",
-        "位元DP（Bitmask DP）",
-        "DP"
+        "Broken Profile DP",
+        "Bitmask DP",
+        "Dynamic Programming (DP)"
     ],
     "2220": [
-        "數位DP（Digit DP）",
-        "DP"
+        "Digit DP",
+        "Dynamic Programming (DP)"
     ],
     "1192": [
-        "深度優先搜尋（DFS）",
-        "圖論",
+        "Depth First Search（DFS）",
+        "Graph",
         "Flood-fill"
     ],
     "1193": [
-        "廣度優先搜尋（BFS）",
-        "圖論"
+        "Breadth First Search（BFS）",
+        "Graph"
     ],
     "1666": [
-        "深度優先搜尋（DFS）",
-        "圖論"
+        "Depth First Search（DFS）",
+        "Graph"
     ],
     "1667": [
-        "廣度優先搜尋（BFS）",
-        "圖論"
+        "Breadth First Search（BFS）",
+        "Graph"
     ],
     "1668": [
-        "圖論",
-        "二分圖（Bipartite graph）"
+        "Graph",
+        "Bipartite Graph"
     ],
     "1669": [
-        "環（Cycle）",
-        "圖論",
+        "Cycle",
+        "Graph",
         "Bellman-Ford"
     ],
     "1194": [
-        "廣度優先搜尋（BFS）",
-        "圖論"
+        "Breadth First Search（BFS）",
+        "Graph"
     ],
     "1671": [
-        "圖論",
+        "Graph",
         "Dijkstra"
     ],
     "1672": [
-        "圖論",
+        "Graph",
         "Floyd warshall"
     ],
     "1673": [
-        "深度優先搜尋（DFS）",
-        "圖論",
+        "Depth First Search（DFS）",
+        "Graph",
         "Bellman-Ford"
     ],
     "1195": [
-        "圖論",
+        "Graph",
         "Dijkstra"
     ],
     "1197": [
-        "環（Cycle）",
-        "圖論",
+        "Cycle",
+        "Graph",
         "Bellman-Ford"
     ],
     "1196": [
-        "圖論",
+        "Graph",
         "Dijkstra"
     ],
     "1678": [
-        "環（Cycle）",
-        "深度優先搜尋（DFS）",
-        "圖論"
+        "Cycle",
+        "Depth First Search（DFS）",
+        "Graph"
     ],
     "1679": [
-        "拓樸排序",
-        "圖論"
+        "Topological Sort",
+        "Graph"
     ],
     "1680": [
-        "拓樸排序",
-        "圖論",
-        "DP"
+        "Topological Sort",
+        "Graph",
+        "Dynamic Programming (DP)"
     ],
     "1681": [
-        "拓樸排序",
-        "圖論",
-        "DP"
+        "Topological Sort",
+        "Graph",
+        "Dynamic Programming (DP)"
     ],
     "1202": [
-        "圖論",
+        "Graph",
         "Dijkstra",
-        "DP"
+        "Dynamic Programming (DP)"
     ],
     "1750": [
-        "圖論",
-        "倍增法（Binary lifting）",
-        "Funtional graph"
+        "Graph",
+        "Binary Lifting",
+        "Funtional Graph"
     ],
     "1160": [
-        "圖論",
-        "Funtional graph"
+        "Graph",
+        "Funtional Graph"
     ],
     "1751": [
-        "環（Cycle）",
-        "深度優先搜尋（DFS）",
-        "圖論",
-        "Funtional graph"
+        "Cycle",
+        "Depth First Search（DFS）",
+        "Graph",
+        "Funtional Graph"
     ],
     "1675": [
-        "最小生成樹",
-        "圖論",
-        "併查集（Disjoint sets union）"
+        "Minimum Spanning Tree (MST)",
+        "Graph",
+        "Disjoint Sets Union"
     ],
     "1676": [
-        "圖論",
-        "併查集（Disjoint sets union）"
+        "Graph",
+        "Disjoint Sets Union"
     ],
     "1682": [
-        "深度優先搜尋（DFS）",
-        "強連通分量（SCC）",
-        "圖論"
+        "Depth First Search（DFS）",
+        "Strongly Connected Components (SCC)",
+        "Graph"
     ],
     "1683": [
-        "強連通分量（SCC）",
-        "圖論"
+        "Strongly Connected Components (SCC)",
+        "Graph"
     ],
     "1684": [
-        "圖論",
+        "Graph",
         "2-SAT"
     ],
     "1686": [
-        "圖論",
-        "強連通分量（SCC）"
+        "Graph",
+        "Strongly Connected Components (SCC)"
     ],
     "1691": [
-        "歐拉迴圈",
-        "圖論"
+        "Eulerian Circuit",
+        "Graph"
     ],
     "1692": [
-        "歐拉迴圈",
-        "圖論"
+        "Eulerian Circuit",
+        "Graph"
     ],
     "1693": [
-        "歐拉路徑",
-        "圖論"
+        "Eulerian Path",
+        "Graph"
     ],
     "1690": [
-        "圖論",
-        "哈密頓路徑",
-        "位元DP（Bitmask DP）"
+        "Graph",
+        "hamiltonian Path",
+        "Bitmask DP"
     ],
     "1689": [
-        "剪枝/貪心（Warnsdorff's Algorithm）",
-        "DFS 回朔"
+        "Warnsdorff's Algorithm",
+        "Rollback"
     ],
     "1694": [
-        "最大流（Flow）",
-        "圖論"
+        "Maximum flow",
+        "Graph"
     ],
     "1695": [
-        "最小割（Cut）",
-        "圖論"
+        "Minimum cut",
+        "Graph"
     ],
     "1696": [
-        "最小割（Cut）",
-        "最大流（Flow）",
-        "圖論"
+        "Minimum cut",
+        "Maximum flow",
+        "Graph"
     ],
     "1711": [
-        "圖論",
-        "最大流（Flow）"
+        "Graph",
+        "Maximum flow"
     ],
     "1646": [
-        "資料結構",
-        "前綴和（Prefix sum）"
+        "Data Structure",
+        "Prefix Sum"
     ],
     "1647": [
-        "資料結構",
-        "線段樹（Segment tree）",
-        "稀疏表（Sparse table）"
+        "Data Structure",
+        "Segment Tree",
+        "Sparse Table"
     ],
     "1648": [
-        "資料結構",
-        "線段樹（Segment tree）",
-        "樹狀數組（BIT）"
+        "Data Structure",
+        "Segment Tree",
+        "Binary Index Tree (BIT)"
     ],
     "1649": [
-        "資料結構",
-        "線段樹（Segment tree）"
+        "Data Structure",
+        "Segment Tree"
     ],
     "1650": [
-        "資料結構",
-        "前綴和（Prefix sum）"
+        "Data Structure",
+        "Prefix Sum"
     ],
     "1651": [
-        "資料結構",
-        "線段樹（Segment tree）",
-        "樹狀數組（BIT）",
-        "差分"
+        "Data Structure",
+        "Segment Tree",
+        "Binary Index Tree (BIT)",
+        "Difference"
     ],
     "1652": [
-        "資料結構",
-        "前綴和（Prefix sum）"
+        "Data Structure",
+        "Prefix Sum"
     ],
     "1143": [
-        "資料結構",
-        "線段樹（Segment tree）",
-        "二分搜（Binary search）"
+        "Data Structure",
+        "Segment Tree",
+        "Binary search"
     ],
     "1749": [
-        "資料結構",
+        "Data Structure",
         "rope",
         "pb_ds",
         "Ordered-set"
     ],
     "1144": [
-        "資料結構",
+        "Data Structure",
         "pb_ds",
         "Ordered-set"
     ],
     "2166": [
-        "資料結構",
-        "線段樹（Segment tree）"
+        "Data Structure",
+        "Segment Tree"
     ],
     "2206": [
-        "資料結構",
-        "線段樹（Segment tree）"
+        "Data Structure",
+        "Segment Tree"
     ],
     "1190": [
-        "資料結構"
+        "Data Structure"
     ],
     "1734": [
-        "資料結構",
-        "樹狀數組（BIT）",
-        "掃描線（Sweep line）"
+        "Data Structure",
+        "Binary Index Tree (BIT)",
+        "Sweep Line"
     ],
     "2416": [
-        "資料結構"
+        "Data Structure"
     ],
     "1739": [
-        "資料結構",
-        "樹狀數組（BIT）"
+        "Data Structure",
+        "Binary Index Tree (BIT)"
     ],
     "1735": [
-        "資料結構",
-        "線段樹（Segment tree）",
-        "懶惰標記（Lazy tag）"
+        "Data Structure",
+        "Segment Tree",
+        "Lazy Tag"
     ],
     "1736": [
-        "資料結構"
+        "Data Structure"
     ],
     "1737": [
-        "資料結構"
+        "Data Structure"
     ],
     "1674": [
-        "深度優先搜尋（DFS）",
-        "圖論",
-        "DP"
+        "Depth First Search（DFS）",
+        "Graph",
+        "Dynamic Programming (DP)"
     ],
     "1130": [
         "點支配",
-        "貪心",
-        "深度優先搜尋（DFS）",
-        "圖論",
-        "併查集（Disjoint sets union）"
+        "Greedy",
+        "Depth First Search（DFS）",
+        "Graph",
+        "Disjoint Sets Union"
     ],
     "1131": [
         "樹直徑（Tree diameter）",
-        "圖論"
+        "Graph"
     ],
     "1132": [
         "樹直徑（Tree diameter）",
-        "圖論"
+        "Graph"
     ],
     "1133": [
         "換根DP（Rerooting DP）",
-        "圖論",
-        "DP"
+        "Graph",
+        "Dynamic Programming (DP)"
     ],
     "1687": [
-        "圖論",
-        "倍增法（Binary lifting）"
+        "Graph",
+        "Binary Lifting"
     ],
     "1688": [
-        "最低共同祖先（LCA）",
-        "圖論"
+        "Lowest Common Ancestor (LCA)",
+        "Graph"
     ],
     "1135": [
-        "最低共同祖先（LCA）",
-        "圖論"
+        "Lowest Common Ancestor（LCA）",
+        "Graph"
     ],
     "1136": [
-        "圖論"
+        "Graph"
     ],
     "1137": [
-        "樹狀數組（BIT）",
+        "Binary Index Tree (BIT)",
         "樹壓平",
-        "圖論"
+        "Graph"
     ],
     "1138": [
-        "樹狀數組（BIT）",
+        "Binary Index Tree (BIT)",
         "樹壓平",
-        "差分",
-        "圖論"
+        "Difference",
+        "Graph"
     ],
     "2134": [
-        "圖論"
+        "Graph"
     ],
     "1139": [
-        "深度優先搜尋（DFS）",
-        "圖論",
+        "Depth First Search（DFS）",
+        "Graph",
         "啟發式合併（Small-to-large merging）"
     ],
     "2079": [
-        "深度優先搜尋（DFS）",
-        "樹重心（Tree centroid）",
-        "圖論"
+        "Depth First Search（DFS）",
+        "Tree Centroid",
+        "Graph"
     ],
     "2080": [
-        "圖論"
+        "Graph"
     ],
     "2081": [
-        "圖論"
+        "Graph"
     ],
     "2164": [
-        "遞迴"
+        "Recursion"
     ],
     "1095": [
         "數論",
-        "數學",
+        "Math",
         "快速冪"
     ],
     "1712": [
         "費馬小定理",
         "數論",
-        "數學"
+        "Math"
     ],
     "1713": [
         "質因數分解",
         "數論",
-        "數學"
+        "Math"
     ],
     "1081": [
         "調和級數",
         "數論",
-        "數學"
+        "Math"
     ],
     "1082": [
         "模反元素",
         "數論",
-        "數學",
+        "Math",
         "快速冪"
     ],
     "2182": [
         "費馬小定理",
         "數論",
-        "數學"
+        "Math"
     ],
     "2185": [
-        "枚舉",
+        "Enumeration",
         "數論",
-        "數學",
+        "Math",
         "排容原理"
     ],
     "2417": [],
     "1079": [
         "模反元素",
         "數論",
-        "數學",
-        "排列組合"
+        "Math",
+        "Combination"
     ],
     "1715": [
-        "數學",
-        "排列組合"
+        "Math",
+        "Combination"
     ],
     "1716": [
-        "數學",
-        "排列組合"
+        "Math",
+        "Combination"
     ],
     "1717": [
-        "數學",
-        "排列組合",
-        "DP"
+        "Math",
+        "Combination",
+        "Dynamic Programming (DP)"
     ],
     "2064": [
-        "數學",
-        "排列組合",
+        "Math",
+        "Combination",
         "卡特蘭數（Catalan number）"
     ],
     "2187": [],
@@ -698,165 +695,165 @@
     "1722": [
         "矩陣快速冪",
         "矩陣",
-        "數學"
+        "Math"
     ],
     "1096": [
         "矩陣快速冪",
         "矩陣",
-        "數學"
+        "Math"
     ],
     "1723": [
         "矩陣快速冪",
         "矩陣",
-        "數學",
-        "圖論"
+        "Math",
+        "Graph"
     ],
     "1724": [
         "矩陣快速冪",
         "矩陣",
-        "數學",
-        "圖論"
+        "Math",
+        "Graph"
     ],
     "1725": [
         "機率",
-        "數學"
+        "Math"
     ],
     "1726": [],
     "1727": [
         "機率",
         "期望值",
-        "數學"
+        "Math"
     ],
     "1728": [],
     "1729": [
         "賽局理論",
-        "數學"
+        "Math"
     ],
     "1730": [
         "賽局理論",
-        "數學",
+        "Math",
         "Nim game"
     ],
     "1098": [
         "賽局理論",
-        "數學",
+        "Math",
         "Nim game"
     ],
     "1099": [
         "賽局理論",
-        "數學",
+        "Math",
         "Nim game"
     ],
     "2207": [
         "賽局理論",
-        "數學",
+        "Math",
         "Grundy game"
     ],
     "2208": [
         "賽局理論",
-        "數學"
+        "Math"
     ],
     "1731": [
-        "資料結構",
-        "字典樹（Trie）",
-        "字串"
+        "Data Structure",
+        "Trie",
+        "String"
     ],
     "1753": [
-        "雜湊（Hash）",
-        "字串",
+        "Hash",
+        "String",
         "Z-algorithm"
     ],
     "1732": [
-        "字串"
+        "String"
     ],
     "1733": [
-        "字串"
+        "String"
     ],
     "1110": [
-        "字串"
+        "String"
     ],
     "1111": [
-        "字串"
+        "String"
     ],
     "1112": [
-        "字串"
+        "String"
     ],
     "2420": [
-        "字串"
+        "String"
     ],
     "2102": [
-        "字串"
+        "String"
     ],
     "2103": [
-        "字串"
+        "String"
     ],
     "2104": [
-        "字串"
+        "String"
     ],
     "2105": [
-        "字串"
+        "String"
     ],
     "2106": [
-        "字串"
+        "String"
     ],
     "2107": [
-        "字串"
+        "String"
     ],
     "2108": [
-        "字串"
+        "String"
     ],
     "2109": [
-        "字串"
+        "String"
     ],
     "2110": [
-        "字串"
+        "String"
     ],
     "2189": [
-        "計算幾何"
+        "Geometry"
     ],
     "2190": [
-        "計算幾何"
+        "Geometry"
     ],
     "2191": [
-        "計算幾何"
+        "Geometry"
     ],
     "2192": [
-        "計算幾何"
+        "Geometry"
     ],
     "2193": [
-        "計算幾何"
+        "Geometry"
     ],
     "2194": [
-        "計算幾何"
+        "Geometry"
     ],
     "2195": [
-        "計算幾何"
+        "Geometry"
     ],
     "1628": [
-        "枚舉",
-        "折半枚舉（Meet in the middle）"
+        "Enumeration",
+        "Meet in the Middle"
     ],
     "2136": [
-        "枚舉",
-        "位元（Bitmask）",
-        "bit 優化"
+        "Enumeration",
+        "Bitmask",
+        "Bit Optimization"
     ],
     "2137": [
-        "硬體優化",
-        "枚舉",
-        "位元（Bitmask）",
-        "bit 優化"
+        "Hardware Optimization",
+        "Enumeration",
+        "Bitmask",
+        "Bit Optimization"
     ],
     "2138": [],
     "2143": [],
     "2072": [
-        "資料結構",
-        "樹堆（Treap）"
+        "Data Structure",
+        "Treap"
     ],
     "2073": [
-        "資料結構",
-        "樹堆（Treap）",
-        "懶惰標記（Lazy tag）"
+        "Data Structure",
+        "Treap",
+        "Lazy Tag"
     ],
     "2074": [],
     "2076": [],
@@ -876,97 +873,96 @@
     "2129": [],
     "2130": [],
     "1087": [
-        "貪心"
+        "Greedy"
     ],
     "1146": [
-        "數學"
+        "Math"
     ],
     "1670": [
-        "搜尋",
-        "廣度優先搜尋（BFS）"
+        "Searching",
+        "Breadth First Search（BFS）"
     ],
     "1134": [
-        "圖論"
+        "Graph"
     ],
     "1756": [
-        "貪心",
-        "環（Cycle）",
-        "圖論"
+        "Greedy",
+        "Cycle",
+        "Graph"
     ],
     "2177": [
-        "橋（Bridge）",
-        "圖論",
+        "Bridge",
+        "Graph",
         "Tarjan"
     ],
     "2179": [],
     "2422": [
-        "搜尋",
-        "二分搜（Binary search）"
+        "Searching",
+        "Binary search"
     ],
     "1142": [
-        "貪心",
-        "單調隊列"
+        "Greedy",
+        "Monotonic Stack"
     ],
     "2186": [
-        "資料結構",
+        "Data Structure",
         "map"
     ],
     "2229": [],
     "1655": [
-        "資料結構",
-        "字典樹（Trie）",
-        "位元（Bitmask）"
+        "Data Structure",
+        "Trie",
+        "Bitmask"
     ],
     "1664": [
-        "貪心",
-        "倍增法（Binary lifting）"
+        "Greedy",
+        "Binary Lifting"
     ],
     "1697": [
-        "貪心",
-        "可簡單圖化",
+        "Greedy",
         "Havel-Hakimi"
     ],
     "1702": [
-        "遞迴",
-        "圖論"
+        "Recursion",
+        "Graph"
     ],
     "1704": [],
     "1707": [
-        "環（Cycle）",
-        "廣度優先搜尋（BFS）",
-        "圖論"
+        "Cycle",
+        "Breadth First Search（BFS）",
+        "Graph"
     ],
     "1740": [
-        "資料結構",
-        "樹狀數組（BIT）",
-        "掃描線（Sweep line）",
-        "差分"
+        "Data Structure",
+        "Binary Index Tree (BIT)",
+        "Sweep Line",
+        "Difference"
     ],
     "2214": [
-        "貪心"
+        "Greedy"
     ],
     "2215": [],
     "1743": [],
     "2425": [],
     "1747": [
-        "逆序數對（Inversion）",
-        "資料結構",
-        "樹狀數組（BIT）"
+        "Inversion",
+        "Data Structure",
+        "Binary Index Tree (BIT)"
     ],
     "1748": [
-        "資料結構",
-        "樹狀數組（BIT）",
-        "DP"
+        "Data Structure",
+        "Binary Index Tree (BIT)",
+        "Dynamic Programming (DP)"
     ],
     "1149": [],
     "1188": [
-        "資料結構",
-        "線段樹（Segment tree）",
+        "Data Structure",
+        "Segment Tree",
         "set/multiset"
     ],
     "2419": [
-        "數學",
-        "位元（Bitmask）"
+        "Math",
+        "Bitmask"
     ],
     "2SAT.html#algorithm": [],
     "1086": [],
@@ -979,24 +975,24 @@
     "2132": [],
     "1189": [],
     "1654": [
-        "位元DP（Bitmask DP）",
+        "Bitmask DP",
         "SOS DP（Sum over subset DP）",
-        "DP"
+        "Dynamic Programming (DP)"
     ],
     "1698": [],
     "2430": [],
     "1700": [
-        "雜湊（Hash）",
-        "樹雜湊（Tree hash）",
-        "圖論"
+        "Hash",
+        "Tree Hash",
+        "Graph"
     ],
     "2228": [],
     "1703": [],
     "1706": [
-        "深度優先搜尋（DFS）",
-        "圖論",
-        "位元DP（Bitmask DP）",
-        "DP"
+        "Depth First Search（DFS）",
+        "Graph",
+        "Bitmask DP",
+        "Dynamic Programming (DP)"
     ],
     "1709": [],
     "1742": [],
@@ -1013,10 +1009,10 @@
     "2075": [],
     "2421": [],
     "1159": [
-        "背包問題（Knapsack problem）",
-        "有限背包問題",
-        "二進位優化",
-        "DP"
+        "Knapsack problem",
+        "Bounded Knapsack Problem",
+        "Binary Optimization",
+        "Dynamic Programming (DP)"
     ],
     "1677": [],
     "1203": [],
@@ -1025,25 +1021,25 @@
     "1148": [],
     "2423": [],
     "1161": [
-        "霍夫曼編碼",
-        "資料結構",
-        "貪心",
+        "Huffman Coding",
+        "Data Structure",
+        "Greedy",
         "priority_queue"
     ],
     "1665": [],
     "1699": [],
     "2402": [],
     "1701": [
-        "雜湊（Hash）",
-        "樹雜湊（Tree hash）",
-        "樹重心（Tree centroid）",
-        "圖論"
+        "Hash",
+        "Tree Hash",
+        "Tree Centroid",
+        "Graph"
     ],
     "1705": [],
     "1741": [
-        "資料結構",
-        "線段樹（Segment tree）",
-        "懶惰標記（Lazy tag）"
+        "Data Structure",
+        "Segment Tree",
+        "Lazy Tag"
     ],
     "2429": [],
     "1752": [],
