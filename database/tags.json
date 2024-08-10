@@ -36,7 +36,7 @@
     "1754": [
         "Math",
         "Searching",
-        "Binary search"
+        "Binary Search"
     ],
     "1755": [
         "String"
@@ -82,7 +82,7 @@
     "1084": [
         "Two Pointers",
         "Greedy",
-        "Binary search"
+        "Binary Search"
     ],
     "1090": [
         "Two Pointers",
@@ -103,7 +103,7 @@
     "1640": [
         "Two Pointers",
         "Searching",
-        "Binary search"
+        "Binary Search"
     ],
     "1643": [
         "Data Structure",
@@ -164,7 +164,7 @@
     ],
     "1620": [
         "Searching",
-        "Binary search"
+        "Binary Search"
     ],
     "1630": [
         "Greedy",
@@ -211,7 +211,7 @@
     ],
     "1085": [
         "Greedy",
-        "Binary search"
+        "Binary Search"
     ],
     "1076": [
         "Data Structure",
@@ -261,7 +261,7 @@
         "Dynamic Programming (DP)"
     ],
     "1158": [
-        "Knapsack problem",
+        "Knapsack Problem",
         "Dynamic Programming (DP)"
     ],
     "1746": [
@@ -277,7 +277,7 @@
         "Dynamic Programming (DP)"
     ],
     "1745": [
-        "Knapsack problem",
+        "Knapsack Problem",
         "Bitmask DP",
         "Dynamic Programming (DP)"
     ],
@@ -286,13 +286,13 @@
         "Dynamic Programming (DP)"
     ],
     "1093": [
-        "Knapsack problem",
+        "Knapsack Problem",
         "Combination",
         "Dynamic Programming (DP)"
     ],
     "1145": [
         "Longest Increasing Subsequence (LIS)",
-        "Binary search",
+        "Binary Search",
         "Dynamic Programming (DP)"
     ],
     "1140": [
@@ -314,20 +314,20 @@
         "Dynamic Programming (DP)"
     ],
     "1192": [
-        "Depth First Search（DFS）",
+        "Depth First Search (DFS)",
         "Graph",
         "Flood-fill"
     ],
     "1193": [
-        "Breadth First Search（BFS）",
+        "Breadth First Search (BFS)",
         "Graph"
     ],
     "1666": [
-        "Depth First Search（DFS）",
+        "Depth First Search (DFS)",
         "Graph"
     ],
     "1667": [
-        "Breadth First Search（BFS）",
+        "Breadth First Search (BFS)",
         "Graph"
     ],
     "1668": [
@@ -340,7 +340,7 @@
         "Bellman-Ford"
     ],
     "1194": [
-        "Breadth First Search（BFS）",
+        "Breadth First Search (BFS)",
         "Graph"
     ],
     "1671": [
@@ -349,10 +349,10 @@
     ],
     "1672": [
         "Graph",
-        "Floyd warshall"
+        "Floyd-Warshall"
     ],
     "1673": [
-        "Depth First Search（DFS）",
+        "Depth First Search (DFS)",
         "Graph",
         "Bellman-Ford"
     ],
@@ -371,7 +371,7 @@
     ],
     "1678": [
         "Cycle",
-        "Depth First Search（DFS）",
+        "Depth First Search (DFS)",
         "Graph"
     ],
     "1679": [
@@ -404,7 +404,7 @@
     ],
     "1751": [
         "Cycle",
-        "Depth First Search（DFS）",
+        "Depth First Search (DFS)",
         "Graph",
         "Funtional Graph"
     ],
@@ -418,7 +418,7 @@
         "Disjoint Sets Union"
     ],
     "1682": [
-        "Depth First Search（DFS）",
+        "Depth First Search (DFS)",
         "Strongly Connected Components (SCC)",
         "Graph"
     ],
@@ -507,7 +507,7 @@
     "1143": [
         "Data Structure",
         "Segment Tree",
-        "Binary search"
+        "Binary Search"
     ],
     "1749": [
         "Data Structure",
@@ -555,27 +555,26 @@
         "Data Structure"
     ],
     "1674": [
-        "Depth First Search（DFS）",
+        "Depth First Search (DFS)",
         "Graph",
         "Dynamic Programming (DP)"
     ],
     "1130": [
-        "點支配",
         "Greedy",
-        "Depth First Search（DFS）",
+        "Depth First Search (DFS)",
         "Graph",
         "Disjoint Sets Union"
     ],
     "1131": [
-        "樹直徑（Tree diameter）",
+        "Tree Diameter",
         "Graph"
     ],
     "1132": [
-        "樹直徑（Tree diameter）",
+        "Tree Diameter",
         "Graph"
     ],
     "1133": [
-        "換根DP（Rerooting DP）",
+        "Rerooting DP",
         "Graph",
         "Dynamic Programming (DP)"
     ],
@@ -596,12 +595,12 @@
     ],
     "1137": [
         "Binary Index Tree (BIT)",
-        "樹壓平",
+        "Tree Flatten",
         "Graph"
     ],
     "1138": [
         "Binary Index Tree (BIT)",
-        "樹壓平",
+        "Tree Flatten",
         "Difference",
         "Graph"
     ],
@@ -609,12 +608,12 @@
         "Graph"
     ],
     "1139": [
-        "Depth First Search（DFS）",
+        "Depth First Search (DFS)",
         "Graph",
-        "啟發式合併（Small-to-large merging）"
+        "Small-to-large Merging"
     ],
     "2079": [
-        "Depth First Search（DFS）",
+        "Depth First Search (DFS)",
         "Tree Centroid",
         "Graph"
     ],
@@ -628,46 +627,40 @@
         "Recursion"
     ],
     "1095": [
-        "數論",
         "Math",
-        "快速冪"
+        "Exponentiation by Squaring"
     ],
     "1712": [
-        "費馬小定理",
-        "數論",
+        "Fermat's Little Theorem",
         "Math"
     ],
     "1713": [
-        "質因數分解",
-        "數論",
+        "Prime Factorization",
         "Math"
     ],
     "1081": [
-        "調和級數",
-        "數論",
+        "Harmonic Series",
         "Math"
     ],
     "1082": [
-        "模反元素",
-        "數論",
+        "Modular Inverse",
         "Math",
-        "快速冪"
+        "Exponentiation by Squaring"
     ],
     "2182": [
-        "費馬小定理",
-        "數論",
+        "Fermat's Little Theorem",
+        
         "Math"
     ],
     "2185": [
         "Enumeration",
-        "數論",
         "Math",
-        "排容原理"
+        "Inclusion-Exclusion"
     ],
     "2417": [],
     "1079": [
-        "模反元素",
-        "數論",
+        "Modular Inverse",
+        
         "Math",
         "Combination"
     ],
@@ -687,70 +680,70 @@
     "2064": [
         "Math",
         "Combination",
-        "卡特蘭數（Catalan number）"
+        "Catalan Number"
     ],
     "2187": [],
     "2209": [],
     "2210": [],
     "1722": [
-        "矩陣快速冪",
-        "矩陣",
+        "Exponentiation by Squaring",
+        "Matrix",
         "Math"
     ],
     "1096": [
-        "矩陣快速冪",
-        "矩陣",
+        "Exponentiation by Squaring",
+        "Matrix",
         "Math"
     ],
     "1723": [
-        "矩陣快速冪",
-        "矩陣",
+        "Exponentiation by Squaring",
+        "Matrix",
         "Math",
         "Graph"
     ],
     "1724": [
-        "矩陣快速冪",
-        "矩陣",
+        "Exponentiation by Squaring",
+        "Matrix",
         "Math",
         "Graph"
     ],
     "1725": [
-        "機率",
+        "Probability",
         "Math"
     ],
     "1726": [],
     "1727": [
-        "機率",
-        "期望值",
+        "Probability",
+        "Expected Value",
         "Math"
     ],
     "1728": [],
     "1729": [
-        "賽局理論",
+        "Game Theory",
         "Math"
     ],
     "1730": [
-        "賽局理論",
+        "Game Theory",
         "Math",
         "Nim game"
     ],
     "1098": [
-        "賽局理論",
+        "Game Theory",
         "Math",
         "Nim game"
     ],
     "1099": [
-        "賽局理論",
+        "Game Theory",
         "Math",
         "Nim game"
     ],
     "2207": [
-        "賽局理論",
+        "Game Theory",
         "Math",
         "Grundy game"
     ],
     "2208": [
-        "賽局理論",
+        "Game Theory",
         "Math"
     ],
     "1731": [
@@ -880,7 +873,7 @@
     ],
     "1670": [
         "Searching",
-        "Breadth First Search（BFS）"
+        "Breadth First Search (BFS)"
     ],
     "1134": [
         "Graph"
@@ -898,7 +891,7 @@
     "2179": [],
     "2422": [
         "Searching",
-        "Binary search"
+        "Binary Search"
     ],
     "1142": [
         "Greedy",
@@ -929,7 +922,7 @@
     "1704": [],
     "1707": [
         "Cycle",
-        "Breadth First Search（BFS）",
+        "Breadth First Search (BFS)",
         "Graph"
     ],
     "1740": [
@@ -989,7 +982,7 @@
     "2228": [],
     "1703": [],
     "1706": [
-        "Depth First Search（DFS）",
+        "Depth First Search (DFS)",
         "Graph",
         "Bitmask DP",
         "Dynamic Programming (DP)"
@@ -1009,7 +1002,7 @@
     "2075": [],
     "2421": [],
     "1159": [
-        "Knapsack problem",
+        "Knapsack Problem",
         "Bounded Knapsack Problem",
         "Binary Optimization",
         "Dynamic Programming (DP)"
